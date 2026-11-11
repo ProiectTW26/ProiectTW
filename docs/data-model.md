@@ -99,18 +99,7 @@ Stocheaza cheltuielile comune ale grupurilor.
 
 ## 3. Diagrama relatiilor
 
-```mermaid
-erDiagram
-    users ||--o{ groups : creates
-    users ||--o{ group_members : belongs
-    groups ||--o{ group_members : contains
-    groups ||--o{ tasks : has
-    users |o--o{ tasks : assigned
-    groups ||--o{ shopping_lists : has
-    shopping_lists ||--o{ shopping_items : contains
-    groups ||--o{ expenses : has
-    users ||--o{ expenses : pays
-```
+<img width="1054" height="752" alt="image" src="https://github.com/user-attachments/assets/8033396a-2a79-44cb-9c71-2bfb3250292e" />
 
 ## 4. Relatii importante
 
