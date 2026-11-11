@@ -1,0 +1,117 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TogetherPlan - Grupuri</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #ddd;
+            border-right: 2px solid #999;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 40px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 10px;
+            color: black;
+            text-decoration: none;
+            border: 1px solid #999;
+            background-color: white;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .box {
+            background-color: white;
+            border: 2px solid #999;
+            padding: 25px;
+            margin-top: 25px;
+            max-width: 650px;
+        }
+
+        input {
+            padding: 12px;
+            width: 70%;
+            border: 1px solid #999;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #ddd;
+            border: 1px solid #777;
+            cursor: pointer;
+            margin-top: 15px;
+        }
+
+        .group {
+            border: 1px solid #aaa;
+            padding: 15px;
+            margin-top: 15px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>TogetherPlan</h2>
+
+        <a href="dashboard.html">Acasa</a>
+        <a href="groups.html">Grupuri</a>
+        <a href="tasks.html">Sarcini</a>
+        <a href="shopping.html">Cumparaturi</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="expenses.html">Cheltuieli</a>
+        <a href="login.html">Deconectare</a>
+    </nav>
+
+    <main class="content">
+        <h1>Grupurile mele</h1>
+        <p>Aici poti organiza activitatile impreuna cu alte persoane.</p>
+
+        <section class="box">
+            <h2>Creeaza un grup nou</h2>
+
+            <input type="text" placeholder="Numele grupului">
+
+            <br>
+            <button type="button">Creeaza grup</button>
+        </section>
+
+        <section class="box">
+            <h2>Grupurile existente</h2>
+
+            <div class="group">
+                <h3>Colegi de apartament</h3>
+                <p>Membri: 3</p>
+                <a href="tasks.html">Vezi sarcinile</a>
+            </div>
+
+            <div class="group">
+                <h3>Proiect facultate</h3>
+                <p>Membri: 4</p>
+                <a href="tasks.html">Vezi sarcinile</a>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

@@ -1,0 +1,162 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TogetherPlan - Calendar</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #ddd;
+            border-right: 2px solid #999;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 40px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 10px;
+            color: black;
+            text-decoration: none;
+            border: 1px solid #999;
+            background-color: white;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .box {
+            background-color: white;
+            border: 2px solid #999;
+            padding: 25px;
+            margin-top: 25px;
+            max-width: 800px;
+        }
+
+        .calendar {
+            display: grid;
+            grid-template-columns: repeat(7, 1fr);
+            gap: 8px;
+            margin-top: 20px;
+        }
+
+        .day {
+            border: 1px solid #999;
+            background-color: #f8f8f8;
+            min-height: 65px;
+            padding: 8px;
+        }
+
+        .header {
+            background-color: #ddd;
+            min-height: auto;
+            text-align: center;
+            font-weight: bold;
+        }
+
+        .event {
+            background-color: #ddd;
+            border: 1px solid #aaa;
+            padding: 4px;
+            margin-top: 6px;
+            font-size: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>TogetherPlan</h2>
+
+        <a href="dashboard.html">Acasa</a>
+        <a href="groups.html">Grupuri</a>
+        <a href="tasks.html">Sarcini</a>
+        <a href="shopping.html">Cumparaturi</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="expenses.html">Cheltuieli</a>
+        <a href="login.html">Deconectare</a>
+    </nav>
+
+    <main class="content">
+        <h1>Calendarul activitatilor</h1>
+        <p>Vizualizeaza termenele limita ale sarcinilor.</p>
+
+        <section class="box">
+            <h2>Noiembrie 2026</h2>
+
+            <div class="calendar">
+                <div class="day header">L</div>
+                <div class="day header">Ma</div>
+                <div class="day header">Mi</div>
+                <div class="day header">J</div>
+                <div class="day header">V</div>
+                <div class="day header">S</div>
+                <div class="day header">D</div>
+
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+                <div class="day"></div>
+
+                <div class="day">1</div>
+                <div class="day">2</div>
+                <div class="day">3</div>
+                <div class="day">4</div>
+                <div class="day">5</div>
+                <div class="day">6</div>
+                <div class="day">7</div>
+                <div class="day">8</div>
+                <div class="day">9</div>
+                <div class="day">10</div>
+                <div class="day">11</div>
+                <div class="day">12</div>
+                <div class="day">13</div>
+                <div class="day">14</div>
+
+                <div class="day">
+                    15
+                    <div class="event">Cumpara lapte</div>
+                </div>
+
+                <div class="day">
+                    16
+                    <div class="event">Curatenie</div>
+                </div>
+
+                <div class="day">17</div>
+                <div class="day">18</div>
+                <div class="day">19</div>
+                <div class="day">20</div>
+                <div class="day">21</div>
+                <div class="day">22</div>
+                <div class="day">23</div>
+                <div class="day">24</div>
+                <div class="day">25</div>
+                <div class="day">26</div>
+                <div class="day">27</div>
+                <div class="day">28</div>
+                <div class="day">29</div>
+                <div class="day">30</div>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>

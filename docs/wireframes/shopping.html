@@ -1,0 +1,137 @@
+
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TogetherPlan - Cumparaturi</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f2f2f2;
+            margin: 0;
+            display: flex;
+            min-height: 100vh;
+        }
+
+        .sidebar {
+            width: 220px;
+            background-color: #ddd;
+            border-right: 2px solid #999;
+            padding: 25px;
+        }
+
+        .sidebar h2 {
+            margin-bottom: 40px;
+        }
+
+        .sidebar a {
+            display: block;
+            padding: 12px;
+            margin-bottom: 10px;
+            color: black;
+            text-decoration: none;
+            border: 1px solid #999;
+            background-color: white;
+        }
+
+        .content {
+            flex: 1;
+            padding: 40px;
+        }
+
+        .box {
+            background-color: white;
+            border: 2px solid #999;
+            padding: 25px;
+            margin-top: 25px;
+            max-width: 700px;
+        }
+
+        input, select {
+            display: block;
+            padding: 12px;
+            margin: 12px 0;
+            width: 90%;
+            border: 1px solid #999;
+        }
+
+        button {
+            padding: 12px 20px;
+            background-color: #ddd;
+            border: 1px solid #777;
+            cursor: pointer;
+            margin-top: 10px;
+        }
+
+        .product {
+            border: 1px solid #aaa;
+            padding: 15px;
+            margin-top: 12px;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="sidebar">
+        <h2>TogetherPlan</h2>
+
+        <a href="dashboard.html">Acasa</a>
+        <a href="groups.html">Grupuri</a>
+        <a href="tasks.html">Sarcini</a>
+        <a href="shopping.html">Cumparaturi</a>
+        <a href="calendar.html">Calendar</a>
+        <a href="expenses.html">Cheltuieli</a>
+        <a href="login.html">Deconectare</a>
+    </nav>
+
+    <main class="content">
+        <h1>Liste de cumparaturi</h1>
+        <p>Organizeaza cumparaturile impreuna cu membrii grupului.</p>
+
+        <section class="box">
+            <h2>Creeaza o lista noua</h2>
+
+            <label for="grup">Grup:</label>
+            <select id="grup">
+                <option>Colegi de apartament</option>
+                <option>Proiect facultate</option>
+            </select>
+
+            <input type="text" placeholder="Numele listei">
+
+            <button type="button">Creeaza lista</button>
+        </section>
+
+        <section class="box">
+            <h2>Cumparaturi saptamanale</h2>
+            <p>Grup: Colegi de apartament</p>
+
+            <h3>Adauga produs</h3>
+
+            <input type="text" placeholder="Denumirea produsului">
+            <input type="number" min="1" placeholder="Cantitate">
+
+            <button type="button">Adauga produs</button>
+
+            <h3>Produse existente</h3>
+
+            <div class="product">
+                <input type="checkbox" id="lapte">
+                <label for="lapte">Lapte - 2 bucati</label>
+            </div>
+
+            <div class="product">
+                <input type="checkbox" id="paine">
+                <label for="paine">Paine - 1 bucata</label>
+            </div>
+
+            <div class="product">
+                <input type="checkbox" id="oua" checked>
+                <label for="oua">Oua - 10 bucati (cumparate)</label>
+            </div>
+        </section>
+    </main>
+
+</body>
+</html>
